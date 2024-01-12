@@ -1,2 +1,5 @@
-includes/logs
-includes/config
+#all log files
+**/*.log
+
+#everything inside config
+includes/config/*
