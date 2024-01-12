@@ -121,3 +121,5 @@
 [10-01-2024 10:00] unlink(./images/d1d4f7a696824b95a16adde3f57586533bea1655.jpg): No such file or directory on line 70 of C:\xampp\htdocs\eindopdracht\includes\classes\System\Utils\Image.php
 [10-01-2024 10:00] unlink(./images/d1d4f7a696824b95a16adde3f57586533bea1655.jpg): No such file or directory on line 70 of C:\xampp\htdocs\eindopdracht\includes\classes\System\Utils\Image.php
 [10-01-2024 10:01] unlink(./images/d1d4f7a696824b95a16adde3f57586533bea1655.jpg): No such file or directory on line 70 of C:\xampp\htdocs\eindopdracht\includes\classes\System\Utils\Image.php
+[12-01-2024 10:18] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eindopdracht_pgr2.dates' doesn't exist on line 188 of C:\xampp\htdocs\team17\includes\classes\System\Databases\BaseObject.php
+[12-01-2024 10:22] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'eindopdracht_pgr2.dates' doesn't exist on line 188 of C:\xampp\htdocs\team17\includes\classes\System\Databases\BaseObject.php

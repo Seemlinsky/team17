@@ -1,6 +1,11 @@
 <?php
 $routes = [
     '' => 'HomeHandler@index',
+    'dates' => 'DateHandler@index',
+    'dates/detail' => 'DateHandler@detail',
+    'dates/create' => 'DateHandler@create',
+    'dates/edit' => 'DateHandler@edit',
+    'dates/delete' => 'DateHandler@delete',
     'games' => 'GameHandler@index',
     'games/detail' => 'GameHandler@detail',
     'games/create' => 'GameHandler@create',

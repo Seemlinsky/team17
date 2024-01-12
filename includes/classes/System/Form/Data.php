@@ -27,6 +27,7 @@ class Data
     }
 
 
+    //TODO: getPostVar has to work with a DateTime Object
     /**
      * Retrieve a var from the post array
      *
