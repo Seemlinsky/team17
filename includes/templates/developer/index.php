@@ -2,7 +2,7 @@
 /**
  * @var array $errors
  * @var int $totalDevelopers
- * @var \System\Databases\Objects\Developer[] $developers
+ * @var \System\Databases\Objects\Unused\Developer[] $developers
  */
 ?>
 <h1 class="title mt-4">Developers</h1>

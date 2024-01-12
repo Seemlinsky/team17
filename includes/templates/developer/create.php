@@ -2,7 +2,7 @@
 /**
  * @var array $errors
  * @var string|boolean $success
- * @var \System\Databases\Objects\Developer $developer
+ * @var \System\Databases\Objects\Unused\Developer $developer
  */
 ?>
 <h1 class="title mt-4">Create developer</h1>

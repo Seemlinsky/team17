@@ -1,8 +1,8 @@
 <?php namespace System\Handlers;
 
-use System\Databases\Objects\Game;
-use System\Databases\Objects\Developer;
-use System\Databases\Objects\Genre;
+use System\Databases\Objects\Unused\Developer;
+use System\Databases\Objects\Unused\Game;
+use System\Databases\Objects\Unused\Genre;
 use System\Form\Data;
 use System\Utils\Image;
 

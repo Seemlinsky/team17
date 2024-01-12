@@ -1,6 +1,6 @@
 <?php
 
-namespace System\Databases\Objects;
+namespace System\Databases\Objects\Unused;
 
 use System\Databases\BaseObject;
 
@@ -34,6 +34,6 @@ class Genre extends BaseObject
         );
         $statement->execute([':id' => $this->id]);
 
-        return $statement->fetchAll(\PDO::FETCH_CLASS, 'System\Databases\Objects\Game');
+        return $statement->fetchAll(\PDO::FETCH_CLASS, 'System\Databases\Objects\Unused\Game');
     }
 }

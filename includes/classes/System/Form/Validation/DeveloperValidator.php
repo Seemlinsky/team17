@@ -1,7 +1,6 @@
 <?php namespace System\Form\Validation;
 
-use System\Databases\Objects\Developer;
-use System\Form\Validation\Validator;
+use System\Databases\Objects\Unused\Developer;
 
 /**
  * Class DeveloperValidator

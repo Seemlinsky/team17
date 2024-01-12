@@ -1,6 +1,6 @@
 <?php namespace System\Form\Validation;
 
-use System\Databases\Objects\Game;
+use System\Databases\Objects\Unused\Game;
 
 /**
  * Class GameValidator

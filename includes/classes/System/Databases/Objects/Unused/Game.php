@@ -1,9 +1,8 @@
 <?php
 
-namespace System\Databases\Objects;
+namespace System\Databases\Objects\Unused;
 
 use System\Databases\BaseObject;
-use System\Databases\Database;
 
 /**
  * @method static Game[] getAll()
@@ -16,7 +15,7 @@ class Game extends BaseObject
     protected static array $joinForeignKeys = [
         'developer_id' => [
             'table' => 'developers',
-            'object' => 'System\Databases\Objects\Developer'
+            'object' => 'System\Databases\Objects\Unused\Developer'
         ]
     ];
 

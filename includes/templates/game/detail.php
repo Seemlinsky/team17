@@ -1,7 +1,7 @@
 <?php
 /**
  * @var string[] $errors
- * @var \System\Databases\Objects\Game $game
+ * @var \System\Databases\Objects\Unused\Game $game
  */
 ?>
 <?php if (!empty($errors)): ?>

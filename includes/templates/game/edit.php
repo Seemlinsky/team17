@@ -2,9 +2,9 @@
 /**
  * @var string[] $errors
  * @var string|bool $success
- * @var \System\Databases\Objects\Game|null $game
- * @var \System\Databases\Objects\Developer[] $developers
- * @var \System\Databases\Objects\Genre[] $genres
+ * @var \System\Databases\Objects\Unused\Game|null $game
+ * @var \System\Databases\Objects\Unused\Developer[] $developers
+ * @var \System\Databases\Objects\Unused\Genre[] $genres
  * @var int[] $genreIds
  */
 ?>

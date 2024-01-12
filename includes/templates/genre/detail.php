@@ -1,7 +1,7 @@
 <?php
 /**
  * @var array $errors
- * @var \System\Databases\Objects\Genre|null $genre
+ * @var \System\Databases\Objects\Unused\Genre|null $genre
  */
 ?>
 <?php if (!empty($errors)): ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * @var array $errors
- * @var \System\Databases\Objects\Developer|null $developer
+ * @var \System\Databases\Objects\Unused\Developer|null $developer
  */
 ?>
 <?php if (!empty($errors)): ?>

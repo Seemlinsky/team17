@@ -2,7 +2,7 @@
 /**
  * @var string[] $errors
  * @var int $totalGames
- * @var \System\Databases\Objects\Game[] $games
+ * @var \System\Databases\Objects\Unused\Game[] $games
  * @var string $developerName
  */
 ?>

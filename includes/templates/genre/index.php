@@ -2,7 +2,7 @@
 /**
  * @var array $errors
  * @var int $totalGenres
- * @var \System\Databases\Objects\Genre[] $genres
+ * @var \System\Databases\Objects\Unused\Genre[] $genres
  */
 ?>
 <h1 class="title mt-4">Genres</h1>

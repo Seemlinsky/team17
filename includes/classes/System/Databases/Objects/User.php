@@ -14,6 +14,7 @@ class User extends BaseObject
     protected static string $table = 'users';
 
     public ?int $id = null;
+    public string $name = '';
     public string $email = '';
     public ?string $password = '';
 

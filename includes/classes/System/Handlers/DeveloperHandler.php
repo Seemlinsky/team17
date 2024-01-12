@@ -1,8 +1,6 @@
 <?php namespace System\Handlers;
 
-use System\Databases\Objects\Developer;
-use System\Handlers\BaseHandler;
-use System\Handlers\FillAndValidate;
+use System\Databases\Objects\Unused\Developer;
 
 /**
  * Class DeveloperValidator
