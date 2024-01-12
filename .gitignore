@@ -2,4 +2,4 @@
 **/*.log
 
 #everything inside config
-includes/config/*
+/includes/config/*
