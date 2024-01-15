@@ -3,7 +3,7 @@
 use System\Databases\Objects\Date;
 
 /**
- * Class GameValidator
+ * Class DateValidator
  * @package System\Form\Validation
  */
 class DateValidator implements Validator
@@ -11,7 +11,7 @@ class DateValidator implements Validator
     private array $errors = [];
 
     /**
-     * GameValidator constructor.
+     * DateValidator constructor.
      *
      * @param Date $date
      */
