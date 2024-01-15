@@ -26,7 +26,7 @@
     </div>
     <div class="rightColumnHomePage">
         <section>
-            <img src="images/cleaningImage.png" alt="cleaningImage">
+            <img src="<?=BASE_PATH?>images/cleaningImage.png" alt="cleaningImage">
         </section>
     </div>
 </main>

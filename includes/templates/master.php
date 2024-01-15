@@ -25,13 +25,17 @@
             <span class="navCompanyName">Viktoria Schoonmaakbedrijf</span>
             <a href="<?=BASE_PATH?>">Home</a>
             <a href="<?=BASE_PATH?>afspraken">Afspraken</a>
-            <a href="overOns.php">Over Ons</a>
-            <a href="contact.php">Contact</a>
+            <a href="overons">Over Ons</a>
+            <a href="contact">Contact</a>
         </div>
+        <?php if(!$this->session->keyExists('user')): ?>
         <div class="navLoginLinks">
             <a href="<?=BASE_PATH?>login">Login</a>
             <a href="<?=BASE_PATH?>registratie">Registreer</a>
         </div>
+        <?php else: ?>
+        <p>Je bent al ingelogd. <a href="<?=BASE_PATH?>logout">Uitloggen?</a></p>
+        <?php endif; ?>
     </nav>
 </header>
 <div class="container px-4">
@@ -51,7 +55,7 @@
 
         <div>
             <div class="linkdiv">
-                <p> Meer weten? <a href="over ons">Over ons</a></p>
+                <p> Meer weten? <a href="overons">Over ons</a></p>
 
             </div>
         </div>
