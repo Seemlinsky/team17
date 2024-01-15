@@ -42,7 +42,7 @@ class DateValidator implements Validator
         }
 
         //TODO: add datetime checks for DateValidator
-        if ($this->date->datetime) {
+        if (!isset($this->date->datetime)) {
             $this->errors[] = 'Need to set a date';
         }
     }

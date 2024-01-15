@@ -1,8 +1,11 @@
 <?php
 /**
  * @var string[] $errors
- * @var \System\Databases\Objects\Unused\Game $game
+ * @var \System\Databases\Objects\Date $date
  */
+
+use System\Databases\Objects\User;
+
 ?>
 <?php if (!empty($errors)): ?>
     <section class="content">
@@ -14,21 +17,18 @@
     </section>
 <?php endif; ?>
 
-<?php if (isset($game)): ?>
-    <h1 class="title mt-4"><?= $game->developers_name . ' - ' . $game->name; ?></h1>
-    <img class="image is-128x128" src="<?= BASE_PATH; ?>images/<?= $game->image; ?>" alt="<?= $game->name; ?>"/>
+<?php if (isset($date)): ?>
+    <h1 class="title mt-4"><?= $date->location . ' - ' . $date->datetime; ?></h1>
     <section class="content">
         <ul>
-            <li><b>Description:</b> <?= $game->description; ?></li>
-            <li><b>Genres:</b> <?= implode(', ', $game->getGenres());?></li>
-            <li><b>Year:</b> <?= $game->year; ?></li>
-            <li><b>Rating:</b> <?= $game->rating; ?></li>
+            <li><b>Description:</b> <?= $date->description; ?></li>
+            <li><b>Jobs:</b> <?= implode(', ', $date->getJobs());?></li>
+            <li><b>Size:</b> <?= $date->size; ?></li>
+            <li><b>Price:</b> €<?= $date->price; ?></li>
+            <li><b>User:</b> <?= User::getById($date->user_id)->name; ?></li>
         </ul>
     </section>
 
-<a class="button mt-4" href="<?= BASE_PATH; ?>games/detail?id=<?= $game->getPreviousId(); ?>">&laquo; Previous</a>
-<a class="button mt-4" href="<?= BASE_PATH; ?>games/detail?id=<?= $game->getNextId(); ?>">Next &raquo;</a>
-<br>
 <?php endif; ?>
 
-<a class="button mt-4" href="<?= BASE_PATH . 'games'; ?>">Go back to the list</a>
+<a class="button mt-4" href="<?= BASE_PATH . 'dates'; ?>">Go back to the list</a>

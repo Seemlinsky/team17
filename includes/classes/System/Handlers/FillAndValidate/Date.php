@@ -23,8 +23,6 @@ trait Date
             $this->date->description = $this->formData->getPostVar('description');
             $this->date->setJobIds($this->formData->getPostVar('job-ids'));
             $this->date->size = $this->formData->getPostVar('size');
-
-            //TODO: getPostVar has to work with a DateTime Object
             $this->date->datetime = $this->formData->getPostVar('datetime');
 
             foreach($this->formData->getPostVar('job-ids') as $jobId)

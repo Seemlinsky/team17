@@ -1,5 +1,7 @@
 <?php namespace System\Form;
 
+use DateTime;
+
 /**
  * Class Data
  * @package MusicCollection\Form
@@ -27,7 +29,6 @@ class Data
     }
 
 
-    //TODO: getPostVar has to work with a DateTime Object
     /**
      * Retrieve a var from the post array
      *

@@ -45,7 +45,7 @@
                 <label class="label" for="job-ids">Job(s)</label>
             </div>
             <div class="field-body select is-multiple is-fullwidth">
-                <select multiple size="3" name="job-ids" id="job-ids" title="Genres">
+                <select multiple size="3" name="job-ids[]" id="job-ids" title="Jobs">
                     <?php foreach ($jobs as $job): ?>
                         <option value="<?= $job->id; ?>" <?= in_array($job->id, $jobIds) ? 'selected' : '' ?>><?= $job->name; ?></option>
                     <?php endforeach; ?>
@@ -65,7 +65,7 @@
                 <label class="label" for="datetime">Time</label>
             </div>
             <div class="field-body">
-                <input class="input" id="datetime" type="datetime-local" min="2024-01-11T00:00" name="datetime" value="<?= date_format($date->datetime, "YYYY-MM-DDThh:mm"); ?>"/>
+                <input class="input" id="datetime" type="datetime-local" min="2024-01-11T00:00" name="datetime" value="<?= date_create_from_format("Y-m-d\TH:i", $date->datetime); ?>"/>
             </div>
         </div>
         <div class="field is-horizontal">
@@ -76,5 +76,5 @@
         </div>
     </form>
 </section>
-<a class="button mt-4" href="<?= BASE_PATH; ?>games">&laquo; Go back to the list</a>
+<a class="button mt-4" href="<?= BASE_PATH; ?>dates">&laquo; Go back to the list</a>
 <a class="button mt-4 is-danger" href="<?= BASE_PATH; ?>user/logout">Logout</a>

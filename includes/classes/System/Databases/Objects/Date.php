@@ -2,7 +2,6 @@
 
 namespace System\Databases\Objects;
 
-use DateTime;
 use System\Databases\BaseObject;
 use System\Databases\Objects\Unused\Genre;
 
@@ -25,7 +24,7 @@ class Date extends BaseObject
     public ?int $user_id = null;
     public string $location = '';
     public string $description = '';
-    public DateTime $datetime;
+    public string $datetime = '';
     public string $size = '';
     public float $price = 0;
     private array $jobIds = [];
@@ -41,7 +40,7 @@ class Date extends BaseObject
 
             //Delete all current references
             $statement = $this->db->prepare('DELETE FROM date_job WHERE date_id = :date_id');
-            $statement->execute([':game_id' => $this->id]);
+            $statement->execute([':date_id' => $this->id]);
 
             //Add the current references
             foreach ($this->jobIds as $jobId) {

@@ -23,13 +23,12 @@
 <table class="table is-striped mt-4">
     <thead>
     <tr>
-        <th></th>
         <th>#</th>
-        <th>Name</th>
-        <th>Developer</th>
-        <th>Genre(s)</th>
-        <th>Year</th>
-        <th>Rating</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Job(s)</th>
+        <th>Size</th>
+        <th>Price</th>
         <th colspan=3"></th>
     </tr>
     </thead>
@@ -42,12 +41,12 @@
     <?php foreach ($dates as $date): ?>
         <tr>
             <td class="is-vcentered"><?= $date->id; ?></td>
-            <td class="is-vcentered"><?= $date->name; ?></td>
-            <td class="is-vcentered"><?= $date->user_id; ?></td>
+            <td class="is-vcentered"><?= $date->location; ?></td>
+            <td class="is-vcentered"><?= $date->datetime; ?></td>
             <td class="is-vcentered"><?= implode(', ', $date->getJobs()); ?></td>
 
-            <td class="is-vcentered"><?= $date->year; ?></td>
-            <td class="is-vcentered"><?= $date->rating; ?></td>
+            <td class="is-vcentered"><?= $date->size; ?></td>
+            <td class="is-vcentered">€<?= $date->price; ?></td>
             <td class="is-vcentered"><a href="<?= BASE_PATH; ?>dates/detail?id=<?= $date->id; ?>">Details</a></td>
             <td class="is-vcentered"><a href="<?= BASE_PATH; ?>dates/edit?id=<?= $date->id; ?>">Edit</a></td>
             <td class="is-vcentered"><a href="<?= BASE_PATH; ?>dates/delete?id=<?= $date->id; ?>">Delete</a></td>

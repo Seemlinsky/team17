@@ -76,7 +76,6 @@ class DateHandler extends BaseHandler
 
         //Set default empty date & execute POST logic
         $this->date = new Date();
-        $this->date->datetime = new DateTime();
         $user = $this->session->get('user');
         $this->date->user_id = $user->id;
         $this->executePostHandler();
@@ -89,6 +88,7 @@ class DateHandler extends BaseHandler
                     $success = 'Your new date has been created in the database!';
                 } else {
                     Date::delete($this->date->id);
+                    $this->errors[] = 'Whoops, something went wrong saving the Job';
                 }
                 //Override to see a new empty form
                 $this->date = new Date();
