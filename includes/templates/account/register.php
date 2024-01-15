@@ -11,14 +11,16 @@
 <section>
     <div class="bigtext">
         <div>
-            <p>Log in</p>
+            <p>Registratie</p>
         </div>
-        <div class="smalltaxt">
-            <p>U moet inloggen voordat u een afspraak kan maken</p>
+    </div>
+    <div class="bigtext">
+        <div>
+            <p>NOG NIET AF!!!</p>
         </div>
     </div>
     <div class="formdiv">
-        <form action="" method="post">
+        <form action="post">
 
             <div class="veld">
                 <div >
@@ -26,23 +28,23 @@
                         <label for="email">Email</label>
                     </div>
                     <div>
-                        <input name="email" id="email" type="email" placeholder="Email" required>
+                        <input name="email" id="email" type="text" placeholder="Email bvb. naam@org.nl">
 
                     </div>
 
                 </div>
                 <div >
                     <div>
-                        <label for="password">Wachtwoord</label>
+                        <label for="wachtwoord">Wachtwoord</label>
                     </div>
                     <div>
-                        <input name="password" id="password" type="password" placeholder="Wachtwoord" required>
+                        <input name="wachtwoord" id="wachtwoord"  type="text" placeholder="Wachtwoord">
                     </div>
 
                 </div>
 
                 <div>
-                    <button class="form-knop" type="submit" name="submit">
+                    <button class="form-knop">
                         Log in
                     </button>
                 </div>

@@ -11,7 +11,7 @@ class HomeHandler extends BaseHandler
     {
         //Return formatted data
         $this->renderTemplate([
-            'pageTitle' => 'Welcome to my date collection!'
+            'pageTitle' => 'Home'
         ]);
     }
 }

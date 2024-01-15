@@ -22,9 +22,11 @@ class AccountHandler extends BaseHandler
         if ($this->session->keyExists('user')) {
             if(empty($_GET['location']))
             {
+                //send back home
                 header('Location: '.BASE_PATH);
                 exit;
             }
+            //go to the location that was given
             header('Location: '.BASE_PATH .$_GET['location']);
             exit;
         }
@@ -84,13 +86,20 @@ class AccountHandler extends BaseHandler
         exit;
     }
 
-    static function register(): void
+    protected function register(): void
     {
+
         //TEMP script just to add an user.
-        $user = new User();
-        $user->email = '1086030@hr.nl';
-        $user->password = password_hash('testeroni', PASSWORD_DEFAULT);
-        $user->save();
-        exit;
+        //$user = new User();
+        //$user->email = '';
+        //$user->password = password_hash('', PASSWORD_DEFAULT);
+        //$user->save();
+
+        //Return formatted data
+        $this->renderTemplate([
+            'pageTitle' => 'Registratie',
+            'email' => $email ?? false,
+            'errors' => $this->errors
+        ]);
     }
 }

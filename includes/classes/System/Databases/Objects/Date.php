@@ -3,7 +3,6 @@
 namespace System\Databases\Objects;
 
 use System\Databases\BaseObject;
-use System\Databases\Objects\Unused\Genre;
 
 /**
  * @method static Date[] getAll()

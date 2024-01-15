@@ -26,8 +26,6 @@ class JobHandler extends BaseHandler
         ]);
     }
 
-
-
     /**
      * @noinspection PhpUnused
      */
