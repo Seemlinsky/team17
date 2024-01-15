@@ -27,6 +27,7 @@ class Date extends BaseObject
     public string $datetime = '';
     public string $size = '';
     public float $price = 0;
+    public int $hours = 0;
     private array $jobIds = [];
 
 

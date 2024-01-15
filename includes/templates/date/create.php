@@ -62,10 +62,18 @@
         </div>
         <div class="field is-horizontal">
             <div class="field-label is-normal">
+                <label class="label" for="hours">Hours</label>
+            </div>
+            <div class="field-body">
+                <input class="input" id="hours" type="number" name="hours" value="<?= $date->hours; ?>"/>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
                 <label class="label" for="datetime">Time</label>
             </div>
             <div class="field-body">
-                <input class="input" id="datetime" type="datetime-local" min="2024-01-11T00:00" name="datetime" value="<?= date_create_from_format("Y-m-d\TH:i", $date->datetime); ?>"/>
+                <input class="input" id="datetime" type="datetime-local" min="2024-01-11T00:00" name="datetime" value="<?= $date->datetime; ?>"/>
             </div>
         </div>
         <div class="field is-horizontal">

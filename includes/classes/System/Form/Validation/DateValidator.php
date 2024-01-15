@@ -41,8 +41,7 @@ class DateValidator implements Validator
             $this->errors[] = 'Size cannot be empty';
         }
 
-        //TODO: add datetime checks for DateValidator
-        if (!isset($this->date->datetime)) {
+        if ($this->date->datetime == '') {
             $this->errors[] = 'Need to set a date';
         }
     }

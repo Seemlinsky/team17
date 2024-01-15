@@ -149,9 +149,9 @@ class DateHandler extends BaseHandler
             $pageTitle = 'Date does\'t exist';
         }
 
-        $genreIds = null;
+        $jobIds = null;
         if(isset($this->date)){
-            $genreIds = $this->date->getJobIds();
+            $jobIds = $this->date->getJobIds();
         }
 
         //Return formatted data
@@ -159,7 +159,7 @@ class DateHandler extends BaseHandler
             'pageTitle' => $pageTitle,
             'date' => $this->date ?? null,
             'jobs' => Job::getAll(),
-            'genreIds' => $genreIds,
+            'jobIds' => $jobIds,
             'success' => $success ?? false,
             'errors' => $this->errors
         ]);

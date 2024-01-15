@@ -131,3 +131,6 @@
 [15-01-2024 10:42] Query can't find dates.id. on line 292 of C:\xampp\htdocs\team17\includes\classes\System\Databases\BaseObject.php
 [15-01-2024 10:42] Query can't find dates.id. on line 292 of C:\xampp\htdocs\team17\includes\classes\System\Databases\BaseObject.php
 [15-01-2024 10:45] Query can't find dates.id. on line 292 of C:\xampp\htdocs\team17\includes\classes\System\Databases\BaseObject.php
+[15-01-2024 11:27] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cle2_sprint2.games' doesn't exist on line 188 of C:\xampp\htdocs\team17\includes\classes\System\Databases\BaseObject.php
+[15-01-2024 11:29] Undefined variable $jobIds on line 51 of C:\xampp\htdocs\team17\includes\templates\date\edit.php
+[15-01-2024 11:40] Undefined array key "hours" on line 91 of C:\xampp\htdocs\team17\includes\classes\System\Databases\BaseObject.php

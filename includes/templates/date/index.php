@@ -28,6 +28,7 @@
         <th>Date</th>
         <th>Job(s)</th>
         <th>Size</th>
+        <th>Hours</th>
         <th>Price</th>
         <th colspan=3"></th>
     </tr>
@@ -46,6 +47,7 @@
             <td class="is-vcentered"><?= implode(', ', $date->getJobs()); ?></td>
 
             <td class="is-vcentered"><?= $date->size; ?></td>
+            <td class="is-vcentered"><?= $date->hours; ?></td>
             <td class="is-vcentered">€<?= $date->price; ?></td>
             <td class="is-vcentered"><a href="<?= BASE_PATH; ?>dates/detail?id=<?= $date->id; ?>">Details</a></td>
             <td class="is-vcentered"><a href="<?= BASE_PATH; ?>dates/edit?id=<?= $date->id; ?>">Edit</a></td>

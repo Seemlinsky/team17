@@ -25,10 +25,13 @@ trait Date
             $this->date->size = $this->formData->getPostVar('size');
             $this->date->datetime = $this->formData->getPostVar('datetime');
 
+            $this->date->price = 0;
             foreach($this->formData->getPostVar('job-ids') as $jobId)
             {
                 $this->date->price += Job::getById($jobId)->price;
             }
+
+            $this->date->hours = $this->formData->getPostVar('hours');
 
 
             //Actual validation

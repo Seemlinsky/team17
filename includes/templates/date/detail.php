@@ -24,6 +24,7 @@ use System\Databases\Objects\User;
             <li><b>Description:</b> <?= $date->description; ?></li>
             <li><b>Jobs:</b> <?= implode(', ', $date->getJobs());?></li>
             <li><b>Size:</b> <?= $date->size; ?></li>
+            <li><b>Hours:</b> <?= $date->hours; ?>
             <li><b>Price:</b> €<?= $date->price; ?></li>
             <li><b>User:</b> <?= User::getById($date->user_id)->name; ?></li>
         </ul>
