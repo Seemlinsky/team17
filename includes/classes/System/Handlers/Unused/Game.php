@@ -1,7 +1,7 @@
 <?php namespace System\Handlers\Unused;
 
 use System\Form\Data;
-use System\Form\Validation\GameValidator;
+use System\Form\Validation\Unused\GameValidator;
 
 /**
  * Trait Game

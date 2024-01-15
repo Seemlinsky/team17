@@ -1,6 +1,7 @@
-<?php namespace System\Form\Validation;
+<?php namespace System\Form\Validation\Unused;
 
 use System\Databases\Objects\Unused\Genre;
+use System\Form\Validation\Validator;
 
 /**
  * Class GenreValidator
