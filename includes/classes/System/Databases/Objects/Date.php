@@ -60,7 +60,7 @@ class Date extends BaseObject
     }
 
     /**
-     * @return Genre[]
+     * @return Job[]
      */
     public function getJobs(): array
     {
@@ -85,7 +85,7 @@ class Date extends BaseObject
 
 
     /**
-     * @param array $genreIds
+     * @param array $jobIds
      * @return void
      */
     public function setJobIds(array $jobIds): void

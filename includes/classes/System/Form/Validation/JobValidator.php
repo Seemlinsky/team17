@@ -12,7 +12,7 @@ class JobValidator implements Validator
     private array $errors = [];
 
     /**
-     * GenreValidator constructor.
+     * JobValidator constructor.
      *
      * @param Job $job
      */

@@ -15,7 +15,7 @@ class JobHandler extends BaseHandler
 
     protected function index(): void
     {
-        //Get all genres
+        //Get all jobs
         $jobs = Job::getAll();
 
         //Return formatted data
