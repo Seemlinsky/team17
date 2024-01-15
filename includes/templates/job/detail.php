@@ -18,14 +18,14 @@
     <h1 class="title mt-4"><?= $job->name; ?></h1>
     <section class="content">
         <ul>
+            <li><b>Description:</b> <?= $job->description; ?></li>
             <li>Dates:
                 <ul>
-                    <?php foreach ($job->dates() as $job): ?>
-                        <li><?= $job->name; ?></li>
+                    <?php foreach ($job->dates() as $date): ?>
+                        <li><?= $date->location ?> - <?= $date->datetime; ?></li>
                     <?php endforeach; ?>
                 </ul>
             </li>
-            <li><b>Description:</b> <?= $job->description; ?></li>
         </ul>
     </section>
 <br>
