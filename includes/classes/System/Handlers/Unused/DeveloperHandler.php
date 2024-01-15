@@ -1,6 +1,7 @@
-<?php namespace System\Handlers;
+<?php namespace System\Handlers\Unused;
 
 use System\Databases\Objects\Unused\Developer;
+use System\Handlers\BaseHandler;
 
 /**
  * Class DeveloperValidator
@@ -9,7 +10,7 @@ use System\Databases\Objects\Unused\Developer;
  */
 class DeveloperHandler extends BaseHandler
 {
-    use FillAndValidate\Developer;
+    use \System\Handlers\Unused\Developer;
 
     private Developer $developer;
 

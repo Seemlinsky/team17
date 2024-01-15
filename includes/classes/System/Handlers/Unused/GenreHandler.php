@@ -1,6 +1,7 @@
-<?php namespace System\Handlers;
+<?php namespace System\Handlers\Unused;
 
 use System\Databases\Objects\Unused\Genre;
+use System\Handlers\BaseHandler;
 
 /**
  * Class GenreHandler
@@ -9,7 +10,7 @@ use System\Databases\Objects\Unused\Genre;
  */
 class GenreHandler extends BaseHandler
 {
-    use FillAndValidate\Genre;
+    use \System\Handlers\Unused\Genre;
 
     private Genre $genre;
 

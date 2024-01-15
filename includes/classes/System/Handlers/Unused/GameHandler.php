@@ -1,14 +1,15 @@
-<?php namespace System\Handlers;
+<?php namespace System\Handlers\Unused;
 
 use System\Databases\Objects\Unused\Developer;
 use System\Databases\Objects\Unused\Game;
 use System\Databases\Objects\Unused\Genre;
 use System\Form\Data;
+use System\Handlers\BaseHandler;
 use System\Utils\Image;
 
 class GameHandler extends BaseHandler
 {
-    use FillAndValidate\Game;
+    use \System\Handlers\Unused\Game;
     private Game $game;
     private Data $formData;
     private Image $image;
